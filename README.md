@@ -65,7 +65,7 @@ Proposed Device: Smart Phone
 
 Proposed Data Transmission Protocol : HTTP
 
-Database: Kaggle
+Database: Google Data
 
 
 ### Cloud Platform
