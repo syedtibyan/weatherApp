@@ -16,6 +16,8 @@ A simple IoT project for Software Engineering Course (SKEL413) on a Weather Fore
     + [System Architecture](#system-architecture)
     + [Sensor/Devices](#sensordevices)
     + [Cloud Platform](#cloud-platform)
+    + [Steps to creat the weather app in Django](#steps-to-creat-the-weather-app-in-django)
+    + [Installations](#installations)
     + [Dashboard](#dashboard)
       - [Before improvement:](#before-improvement)
       - [After improvement:](#after-improvement)
@@ -29,7 +31,7 @@ A simple IoT project for Software Engineering Course (SKEL413) on a Weather Fore
 
 ### Problem Statement
 
-Weather has an impact on people's health and habits, as well as the economy, society, and the environment. The severity of the impact is determined by a number of elements, including the type of weather event, the date of the event, the severity of the event, the duration of the event, and the location of the event. Malaysia has an equatorial climate, which means that the weather is hot and humid most of the year, with plenty of rain. It is one of the Asian countries most sensitive to climate change, therefore weather forecasts are a useful tool for people to prepare ahead and take precautions when necessary. This software provides current weather information as well as forecasts for the future based on the date and time entered by the user. It warns people of severe weather conditions, such as heat waves and heavy rains. 
+Weather has an impact on people's health and habits, as well as the economy, society, and the environment. The severity of the impact is determined by a number of elements, including the type of weather event, the date of the event, the severity of the event, the duration of the event, and the location of the event. Malaysia has an equatorial climate, which means that the weather is hot and humid most of the year, with plenty of rain. It is one of the Asian countries most sensitive to climate change, therefore weather forecasts are a useful tool for people to prepare ahead and take precautions when necessary. This software provides current weather information as well as forecasts for the future based on the name of the city entered by the user. It warns people of severe weather conditions, such as heat waves and heavy rains. 
 
 
 #### Use Case Diagram
@@ -74,22 +76,55 @@ Cloud Hosting Platform: Heroku
 
 URL of our Heroku App: https://weather-forecasting-django.herokuapp.com/
 
-  
+### Steps to creat the weather app in Django: 
+
+1- Create a project directory.
+
+2- Make a virtual environment.
+
+3- Create a new django project.
+
+4- Make a django application.
+
+5- Set up basic urls.
+
+6- Set up a view which renders an html page.
+
+7- Build a basic html and css template.
+
+8- Make a request to google url and fetch the response html page using Python requests library.
+
+9- Leverage Beautiful Soup Library to scrape the data from the html page (Region, Day, Time, Temp etc.).
+
+10- Refactor the view and html template.
+
+11- Overview of external weather API available such as openweathermap API.
+
+### Installations 
+
+1- Installing/creating Virtual Enviroment:
+After we go into the weather app file, we created a virtual enviroment using: virtualenv venv
+
+2- Installing django in the Virvtual Enviroment:
+We installed django in the virtual enviroment using the comand line: pip install django 
+
+3- Installing "request" library which helps with getting data from another site: pip install request
+
+4- Installing "beautifulsoup" library which is used to web scraping purposes to pull the data out of HTML and XML files: pip install beautifulsoup4
 
 ### Dashboard
 
 This is the dashboard that was created using Thunkable. It displays the temperature, day, time and weather status of the desired place/city.
 
-#### Before improvement:
+#### Before improvement (Milestone 4):
 
 ![Slide1](https://user-images.githubusercontent.com/94036456/152692129-943704db-f688-462f-a7e9-fd87e54d43a6.PNG)
 
 
-#### After improvement:
+#### After improvement (Milestone 5):
 
 ![Slide2](https://user-images.githubusercontent.com/94036456/152692137-7faa842a-78c6-4d9d-9a12-0afd5f1531b0.PNG)
 
- 
  
 ## Milestone videos showing the progess of our project
  
